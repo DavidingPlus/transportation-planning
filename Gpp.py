@@ -6,7 +6,7 @@ from utils.JsonParser import JsonParser
 import utils.Curvaa as Curve
 
 # 路径自己改
-path = 'D:\\Code\\Python\\交通规划原理\\Traffic_Flow\\data.json'
+path = './data.json'
 
 with open(path, 'r', encoding='utf-8') as f:
     superHeroSquad = json.load(f)
