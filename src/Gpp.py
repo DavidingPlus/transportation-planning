@@ -4,6 +4,7 @@ import src.Curvaa as Curve
 
 import matplotlib.pyplot as plt
 import json
+import requests
 import numpy as np
 
 
@@ -29,9 +30,21 @@ def create_function(expression):
     return func
 
 
+def request_get(path):
+    # 通过get请求请求服务器上的数据
+    response = requests.get("http://139.155.152.242:8080/getMap")
+    # 存入文件
+    with open(path, 'w') as file:
+        file.write(response.text)
+
+
 def work(path, num):
-    with open(path, 'r', encoding='utf-8') as f:
-        superHeroSquad = json.load(f)
+    # 发送get请求请求数据
+    request_get(path)
+
+    # 读取文件
+    with open(path, 'r') as file:
+        superHeroSquad = json.load(file)
 
     # 打开交互式绘图模式
     plt.ion()
