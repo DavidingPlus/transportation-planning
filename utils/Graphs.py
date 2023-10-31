@@ -3,9 +3,8 @@
 
 Graphs主要使用了Astar算法进行计算，并通过该算法得到所需的结果进一步获取。
 
-    import Graphs as Graphs
-
 """
+
 from matplotlib.cm import ScalarMappable
 from matplotlib.colors import LinearSegmentedColormap, LogNorm
 from utils.Astar import Astars

@@ -6,24 +6,24 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>680</width>
-    <height>723</height>
+    <width>618</width>
+    <height>608</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="Btn">
    <property name="geometry">
     <rect>
-     <x>180</x>
-     <y>220</y>
-     <width>301</width>
-     <height>211</height>
+     <x>150</x>
+     <y>230</y>
+     <width>281</width>
+     <height>101</height>
     </rect>
    </property>
    <property name="text">
-    <string>按钮</string>
+    <string>请点击我</string>
    </property>
   </widget>
  </widget>

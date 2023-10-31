@@ -14,10 +14,10 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
-        Form.resize(680, 723)
-        self.pushButton = QtWidgets.QPushButton(Form)
-        self.pushButton.setGeometry(QtCore.QRect(180, 220, 301, 211))
-        self.pushButton.setObjectName("pushButton")
+        Form.resize(618, 608)
+        self.Btn = QtWidgets.QPushButton(Form)
+        self.Btn.setGeometry(QtCore.QRect(150, 230, 281, 101))
+        self.Btn.setObjectName("Btn")
 
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)
@@ -25,4 +25,4 @@ class Ui_Form(object):
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Form"))
-        self.pushButton.setText(_translate("Form", "按钮"))
+        self.Btn.setText(_translate("Form", "请点击我"))
