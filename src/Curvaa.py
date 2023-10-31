@@ -5,6 +5,7 @@ Curvaa
 Curvaa 是一个用于进行路径计算、绘制的库，在该算法中，我们可以进行
 计算绘制，画出参数方程形式的路径。
 """
+
 import math
 from matplotlib import patches
 from matplotlib.colors import LogNorm

@@ -5,6 +5,7 @@ Astars
 Astars 是一个用于进行路径计算的算法库，在该算法中，我们可以进行Astars作为算法的起始，我们选用
 曼哈顿距离作为启发函数
 """
+
 import collections
 import heapq
 
