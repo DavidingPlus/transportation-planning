@@ -234,12 +234,13 @@ class Graph:
                     ans = -0.5 if visited.count((v, u)) == 0 else 0.5
                 alpha.append(ans)
                 visited.append((u, v))
-
+            for i in range(len(weights)):
+                if weights[i]==0:
+                  weights[i]=0.1  
             norm = LogNorm(min(weights), max(weights))  # 设置映射范围
-
+            print(weights)
             # 绘制边的颜色映射
-            edge_colors = [math.log(x) for x in weights]
-
+            edge_colors = [math.log(x) if x!=0 else math.log(0.0001) for x in weights]
             nx.draw(
                 G, pos, with_labels=True, node_size=10, node_color='skyblue',
                 font_size=6, edgelist=[],  # 这里将 edgelist 置空，因为我们自行绘制边
@@ -249,10 +250,8 @@ class Graph:
 
             vmax = max(weights)
             vmin = min(weights)
-
             sm = plt.cm.ScalarMappable(cmap=self.cmap, norm=norm)
             sm.set_array([])
-
             cbar = plt.colorbar(sm, orientation='vertical',
                                 label='log(log(O Resistance))')
 
@@ -295,9 +294,11 @@ class Graph:
         for link, link_info in self.gdict["links"].items():
             curve = link_info.get("curve", None)
             if curve is not None:
-                print(link_info.get("resistiance", 0), graph_type)
+                # print(link_info.get("resistiance", 0), graph_type)
                 a = ((link_info.get("resistiance", 0) - 1) / 0.15) ** 0.25 if graph_type == 'Graph' else (
                     (link_info.get("resistiance", 0) - 1) / 0.15) ** 0.25*100
+                if a==0:
+                    a=0.01
                 curve.draw_function(
                     self.cmap, a, type=graph_type, vmax=vmax, vmin=vmin)
 

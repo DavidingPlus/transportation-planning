@@ -30,6 +30,7 @@ class Curve:
         print(resistiance)
         norm = LogNorm(
             vmin=vmin, vmax=vmax) if type == "Graph" else plt.Normalize(0, 100)
+        print("resi",resistiance)
         plt.plot(x, y, label='Curve', linewidth=1.0, color=cmaps(
             norm(math.log(resistiance))) if type == "Graph" else cmaps(norm(resistiance)))
         # 计算箭头方向，可以根据需要调整箭头的位置和大小
