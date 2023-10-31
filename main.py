@@ -1,8 +1,8 @@
 # Python Qt 图形化的主程序
-import sys
-from ui import draw
+import src.Gpp as Gpp
 from PyQt5.QtWidgets import QApplication, QMainWindow
-from utils import Gpp
+import ui.draw as draw
+import sys
 
 
 # 自己封装的一个MainWindow类，我们工作逻辑的代码就放在Work中
@@ -23,7 +23,7 @@ class MainWindow:
     # 工作函数都在这里面
     def work(self) -> None:
         # TODO
-        self.ui.Btn.clicked.connect(Gpp.work)
+        self.ui.Btn.clicked.connect(Gpp.work("./res/data.json"))
 
     def show(self) -> None:
         self.mainWindow.show()

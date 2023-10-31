@@ -7,11 +7,11 @@ Graphs主要使用了Astar算法进行计算，并通过该算法得到所需的
 
 from matplotlib.cm import ScalarMappable
 from matplotlib.colors import LinearSegmentedColormap, LogNorm
-from utils.Astar import Astars
+from Astar import Astars
 import matplotlib.pyplot as plt
 import networkx as nx
 import math
-import utils.Curvaa as Curve
+import Curvaa as Curve
 from matplotlib.backend_bases import PickEvent
 import matplotlib.pyplot as plt
 

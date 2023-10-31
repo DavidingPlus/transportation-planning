@@ -1,9 +1,9 @@
-from utils.Graphs import Graph
+from Graphs import Graph
 import matplotlib.pyplot as plt
 import json
 import numpy as np
-from utils.JsonParser import JsonParser
-import utils.Curvaa as Curve
+from JsonParser import JsonParser
+import Curvaa as Curve
 
 
 def func_templet(right, left, funcx, funcy):
@@ -28,10 +28,7 @@ def create_function(expression):
     return func
 
 
-def work():
-    # 路径自己改
-    path = './data.json'
-
+def work(path: str):
     with open(path, 'r', encoding='utf-8') as f:
         superHeroSquad = json.load(f)
 
@@ -88,4 +85,4 @@ def work():
 
 
 if __name__ == "__main__":
-    work()
+    work("res/data.json")
