@@ -40,7 +40,7 @@ def request_get(path):
 
 def work(path, num):
     # 发送get请求请求数据
-    request_get(path)
+    # request_get(path)
 
     # 读取文件
     with open(path, 'r') as file:
