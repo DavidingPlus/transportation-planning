@@ -9,24 +9,36 @@ import numpy as np
 
 
 def func_templet(right, left, funcx, funcy):
+    # 定义一个函数模板，接受右边界，左边界，x函数，y函数作为参数
     def func():
+        # 创建一个等差数列，从右边界到左边界，数量为1000
         t = np.linspace(right, left, int(1000*(left-right)))
+        # 计算x函数的值
         x = funcx(t)
+        # 计算y函数的值
         y = funcy(t)
+        # 返回x和y的值
         return x, y
+    # 返回函数模板
     return func
 
 
 def circle_parametric():
+    # 定义一个圆的参数函数，接受t作为参数
     t = np.linspace(0, 0.25, 1000)
+    # 计算x的值
     x = 2 - np.cos(2 * np.pi * t)
+    # 计算y的值
     y = 1 + np.sin(2 * np.pi * t)
+    # 返回x和y的值
     return x, y
 
 
 def create_function(expression):
+    # 定义一个函数，接受表达式作为参数
     # 定义一个匿名函数，接受x作为参数，并将表达式求值
     def func(t): return eval(expression)
+    # 返回函数
     return func
 
 
@@ -53,12 +65,16 @@ def work(path, num):
     with open(path, 'r') as file:
         superHeroSquad = json.load(file)
 
+    # 解析文件
     gdict = JsonParser.getName(superHeroSquad)
-
+    # 创建图
     my_graph = Graph(gdict)
+    # 获取有向图
     my_graph.getOD()
 
+    # 创建图的副本
     graph_new = my_graph.__copy__()
+    # 获取有向图
     graph_new.getOD()
 
     # 查找最短路径
