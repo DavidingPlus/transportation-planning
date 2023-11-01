@@ -52,20 +52,9 @@ def work(path, num):
     circle_parametrics = func_templet(0, 0.25, create_function(
         "2 - np.cos(2 * np.pi * t)"), create_function("1 + np.sin(2 * np.pi * t)"))
     gdict = JsonParser.getName(superHeroSquad)
-    cee2 = Curve.Curve(1, 2, circle_parametrics)
+    # cee2 = Curve.Curve(1, 2, circle_parametrics)
 
     my_graph = Graph(gdict)
-    my_graph.addNode(0, "(0,0)", True, 200, 300)
-    my_graph.addNode(1, "(10,0)", True, 100, 200)
-    my_graph.addNode(2, "(0,10)", False, 0, 0)
-    my_graph.addNode(3, "(10,10)", False, 0, 0)
-    my_graph.addLink('Link1', 0, 1, "string", None)
-    my_graph.addLink('Link11', 1, 0, "string", None)
-    my_graph.addLink('Link2', 1, 2, "string", cee2)
-    my_graph.addLink('Link8', 2, 3, "string", None)
-    my_graph.addLink('Link3', 0, 3, "string", None)
-    my_graph.addLink('Link5', 3, 0, "string", None)
-
     my_graph.getOD()
 
     graph_new = my_graph.__copy__()

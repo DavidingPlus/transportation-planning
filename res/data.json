@@ -2,21 +2,21 @@
   "data": {
     "nodes": [
       {
-        "id": 3,
+        "id": 0,
         "location": "(5.23,-6.64)",
         "isMain": true,
         "in": 200,
         "out": 300
       },
       {
-        "id": 4,
+        "id": 1,
         "location": "(2.23,3.21)",
         "isMain": true,
         "in": 100,
         "out": 200
       },
       {
-        "id": 5,
+        "id": 2,
         "location": "(5.21,11.11)",
         "isMain": true,
         "in": 100,
@@ -25,23 +25,23 @@
     ],
     "llinks": [
       {
-        "start": 3,
-        "end": 4,
+        "start": 0,
+        "end": 1,
         "limit": "string"
       },
       {
-        "start": 3,
-        "end": 5,
+        "start": 0,
+        "end": 2,
         "limit": "string"
       },
       {
-        "start": 4,
-        "end": 3,
+        "start": 1,
+        "end": 0,
         "limit": "string"
       },
       {
-        "start": 5,
-        "end": 4,
+        "start": 2,
+        "end": 1,
         "limit": "string"
       }
     ]
