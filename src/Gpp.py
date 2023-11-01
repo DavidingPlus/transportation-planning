@@ -42,17 +42,18 @@ def work(path, num):
     # 发送get请求请求数据
     # request_get(path)
 
+    # 打开交互式绘图模式
+    plt.ion()
+
+    # circle_parametrics = func_templet(0, 0.25, create_function(
+    #     "2 - np.cos(2 * np.pi * t)"), create_function("1 + np.sin(2 * np.pi * t)"))
+    # cee2 = Curve.Curve(1, 2, circle_parametrics)
+
     # 读取文件
     with open(path, 'r') as file:
         superHeroSquad = json.load(file)
 
-    # 打开交互式绘图模式
-    plt.ion()
-
-    circle_parametrics = func_templet(0, 0.25, create_function(
-        "2 - np.cos(2 * np.pi * t)"), create_function("1 + np.sin(2 * np.pi * t)"))
     gdict = JsonParser.getName(superHeroSquad)
-    # cee2 = Curve.Curve(1, 2, circle_parametrics)
 
     my_graph = Graph(gdict)
     my_graph.getOD()
