@@ -3,28 +3,28 @@
     "nodes": [
       {
         "id": 0,
-        "location": "(0,0)",
+        "location": "(1.5,1.5)",
         "isMain": true,
         "in": 200,
         "out": 300
       },
       {
         "id": 1,
-        "location": "(0,10)",
+        "location": "(1.5,11.5)",
         "isMain": true,
         "in": 100,
         "out": 200
       },
       {
         "id": 2,
-        "location": "(10,0)",
+        "location": "(11.5,1.5)",
         "isMain": true,
         "in": 200,
         "out": 100
       },
       {
         "id": 3,
-        "location": "(10,10)",
+        "location": "(11.5,11.5)",
         "isMain": true,
         "in": 300,
         "out": 200
