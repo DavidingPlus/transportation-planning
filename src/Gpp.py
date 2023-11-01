@@ -58,7 +58,7 @@ def work(path, num):
     my_graph.addNode(0, "(0,0)", True, 200, 300)
     my_graph.addNode(1, "(10,0)", True, 100, 200)
     my_graph.addNode(2, "(0,10)", False, 0, 0)
-    my_graph.addNode(3, "(10,0)", False, 0, 0)
+    my_graph.addNode(3, "(10,10)", False, 0, 0)
     my_graph.addLink('Link1', 0, 1, "string", None)
     my_graph.addLink('Link11', 1, 0, "string", None)
     my_graph.addLink('Link2', 1, 2, "string", cee2)
