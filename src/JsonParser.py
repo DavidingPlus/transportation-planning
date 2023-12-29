@@ -3,7 +3,6 @@
 
 """
 
-
 class JsonParser:
     def getName(superHeroSquad):
         gdict = {"nodes": {}, "links": {}}
