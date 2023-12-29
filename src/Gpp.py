@@ -44,7 +44,7 @@ def create_function(expression):
 
 def request_get(path):
     # 通过get请求请求服务器上的数据
-    response = requests.get("http://139.155.152.242:8080/getMap")
+    response = requests.get("http://106.55.60.140:8080/getMap")
     # 存入文件
     with open(path, 'w') as file:
         file.write(response.text)
@@ -52,7 +52,7 @@ def request_get(path):
 
 def work(path, num):
     # 发送get请求请求数据
-    # request_get(path)
+    request_get(path)
 
     # 打开交互式绘图模式
     plt.ion()

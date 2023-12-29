@@ -47,6 +47,9 @@ class MainWindow:
 
 # PyQt主程序的框架
 if __name__ == "__main__":
+    # 演示get请求获得数据（平时注释）
+    # Gpp.request_get(path)
+
     # 实例化，传参
     app = QApplication(sys.argv)
 
