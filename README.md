@@ -5,6 +5,22 @@
 - 小组人员：**王森，刘治学，田景颢，刘杰**
 - 指导老师：**熊耀华**
 
+# 具体分工
+
+- 王森
+  - 完成工具算法库`Astar`，`Curvaa`，`Graphs`的编写
+  - 完成图形绘制和数据请求整合文件`Gpp.py`的编写
+- 刘治学
+  - 完成`PyQt5`的界面编写，包括`draw.py`和`draw.ui`
+  - 完成主程序入口`main.py`的编写
+  - 完成项目整体架构的设计和代码的汇总，以及文档的编写
+- 田景颢
+  - 完成`data.json`数据格式的设计和数据的生成
+  - 完成`get`请求服务端的配置，能通过浏览器获取到数据的页面以及通过代码发送`get`请求获得数据
+- 刘杰
+  - 完成颜色工具库`hover`和`Json`数据处理工具库`JsonParser`的编写
+  - 完成演示视频的录制和剪辑
+
 # 注意事项
 
 - 项目在`Github`上开源，地址：[https://github.com/DavidingPlus/TP_Project](https://github.com/DavidingPlus/TP_Project)
@@ -99,20 +115,4 @@
 - `main.py`：程序的主入口，创建`MainWindow`对象，并且运行之后展示出来，然后进行后续发送`get`请求，并处理数据画图的逻辑
 
   <img src="https://img-blog.csdnimg.cn/direct/f55c54a807304919b7a1e65d1a237bf2.png" alt="image-20231229205752120" style="zoom:65%;" />
-
-# 具体分工
-
-- 王森
-  - 完成工具算法库`Astar`，`Curvaa`，`Graphs`的编写
-  - 完成图形绘制和数据请求整合文件`Gpp.py`的编写
-- 刘治学
-  - 完成`PyQt5`的界面编写，包括`draw.py`和`draw.ui`
-  - 完成主程序入口`main.py`的编写
-  - 完成项目整体架构的设计和代码的汇总，以及文档的编写
-- 田景颢
-  - 完成`data.json`数据格式的设计和数据的生成
-  - 完成`get`请求服务端的配置，能通过浏览器获取到数据的页面以及通过代码发送`get`请求获得数据
-- 刘杰
-  - 完成颜色工具库`hover`和`Json`数据处理工具库`JsonParser`的编写
-  - 完成演示视频的录制和剪辑
 
