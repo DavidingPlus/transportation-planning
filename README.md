@@ -29,13 +29,13 @@
 
 - 代码的框架如下：
 
-  <img src="D:\Code\Md_Files\typora-user-images\image-20231229204237018.png" alt="image-20231229204237018" style="zoom:75%;" />
+  <img src="https://img-blog.csdnimg.cn/direct/2168b73844f14021b625db6f03b545c5.png" alt="image-20231229204237018" style="zoom:75%;" />
 
 ## res目录
 
 - `res`目录：存放交通网络结点和边的数据，是一个`json`文件
 
-  <img src="D:\Code\Md_Files\typora-user-images\image-20231229204758402.png" alt="image-20231229204758402" style="zoom:60%;" />
+  <img src="https://img-blog.csdnimg.cn/direct/e563b0417a4849fbad7d923528b5864a.png" alt="image-20231229204758402" style="zoom:60%;" />
 
 ## src目录
 
@@ -45,38 +45,38 @@
 
     - `Astars`是一个用于进行路径计算的算法库，在该算法中，我们可以进行`Astars`作为算法的起始，我们选用曼哈顿距离作为启发函数
 
-    <img src="D:\Code\Md_Files\typora-user-images\image-20231229204443744.png" alt="image-20231229204443744" style="zoom:60%;" />
+    <img src="https://img-blog.csdnimg.cn/direct/758fdb90f31b47be9571ccf80c8e389c.png" alt="image-20231229204443744" style="zoom:60%;" />
 
   - `Curvva.py`
 
     - `Curvaa`是一个用于进行路径计算、绘制的库，在该算法中，我们可以进行计算绘制，画出参数方程形式的路径
 
-    <img src="D:\Code\Md_Files\typora-user-images\image-20231229204817590.png" alt="image-20231229204817590" style="zoom:67%;" />
+    <img src="https://img-blog.csdnimg.cn/direct/d381b8d5e6df4aba8e3ae6dc3fd3a328.png" alt="image-20231229204817590" style="zoom:67%;" />
 
   - `Gpp.py`
 
     - `Gpp.py`是用来进行图形的基础绘制的文件，里面通过拿取`data.json`的数据，将数据转化为图展示出来，在其中还包括了发送`get`请求从远端服务器获得数据的操作
 
-    <img src="D:\Code\Md_Files\typora-user-images\image-20231229205120224.png" alt="image-20231229205120224" style="zoom:65%;" />
+    <img src="https://img-blog.csdnimg.cn/direct/1251c2bc44294ff98709db46cfa36950.png" alt="image-20231229205120224" style="zoom:65%;" />
 
   - `Graphs.py`
 
     - `Graphs`是基于`plt`和`netWorkX`的简单的计算规划展示交通流的类
     - `Graphs`主要使用了`Astar`算法进行计算，并通过该算法得到所需的结果进一步获取
 
-    <img src="D:\Code\Md_Files\typora-user-images\image-20231229204853443.png" alt="image-20231229204853443" style="zoom:67%;" />
+    <img src="https://img-blog.csdnimg.cn/direct/0f6fe237336e46f998f33f88ddba49ce.png" alt="image-20231229204853443" style="zoom:67%;" />
 
   - `hover.py`
 
     - 是一个颜色的工具库，最后的成品有三种不同的颜色主题进行展示，相关在这里进行定义
 
-    <img src="D:\Code\Md_Files\typora-user-images\image-20231229205228796.png" alt="image-20231229205228796" style="zoom:65%;" />
+    <img src="https://img-blog.csdnimg.cn/direct/3e2bda1bc80444e7835787c442d89ed7.png" alt="image-20231229205228796" style="zoom:65%;" />
 
   - `JsonPraser.py`
 
     - `JsonParser`本项目的工具类，存放`json`解析的东西
 
-    <img src="D:\Code\Md_Files\typora-user-images\image-20231229204909300.png" alt="image-20231229204909300" style="zoom:65%;" />
+    <img src="https://img-blog.csdnimg.cn/direct/c543f0c4ca94425ca896d584dfa51d09.png" alt="image-20231229204909300" style="zoom:65%;" />
 
 ## ui目录
 
@@ -86,19 +86,19 @@
 
     - 运用`pythonQt`库，在画出一个主界面加上三个按钮并且对应不同的事件
 
-    <img src="D:\Code\Md_Files\typora-user-images\image-20231229205538583.png" alt="image-20231229205538583" style="zoom:60%;" />
+    <img src="https://img-blog.csdnimg.cn/direct/94db79bb40c543b4a725cff4b77f4801.png" alt="image-20231229205538583" style="zoom:60%;" />
 
   - `draw.ui`
 
     - 界面的`ui`文件
 
-    <img src="D:\Code\Md_Files\typora-user-images\image-20231229205604683.png" alt="image-20231229205604683" style="zoom:65%;" />
+    <img src="https://img-blog.csdnimg.cn/direct/1cfe32d1556448f99a084c4d94558d58.png" alt="image-20231229205604683" style="zoom:65%;" />
 
 ## 主程序
 
 - `main.py`：程序的主入口，创建`MainWindow`对象，并且运行之后展示出来，然后进行后续发送`get`请求，并处理数据画图的逻辑
 
-  <img src="D:\Code\Md_Files\typora-user-images\image-20231229205752120.png" alt="image-20231229205752120" style="zoom:65%;" />
+  <img src="https://img-blog.csdnimg.cn/direct/f55c54a807304919b7a1e65d1a237bf2.png" alt="image-20231229205752120" style="zoom:65%;" />
 
 # 具体分工
 
