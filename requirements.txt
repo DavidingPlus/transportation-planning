@@ -1,0 +1,5 @@
+matplotlib==3.7.5
+networkx==3.1
+numpy==1.24.4
+PyQt5==5.15.9
+Requests==2.31.0
