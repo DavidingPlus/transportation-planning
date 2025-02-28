@@ -23,7 +23,7 @@
 
 # 注意事项
 
-- 项目在`Github`上开源，地址：[https://github.com/DavidingPlus/Transportation-Planning](https://github.com/DavidingPlus/Transportation-Planning)
+- 项目在`Github`上开源，地址：[https://github.com/DavidingPlus/transportation-planning](https://github.com/DavidingPlus/transportation-planning)
 
 - 项目依赖`python3`环境，依赖`PyQt5`包，`windows`系统和`Linux`系统均兼容，本测试在`windows`上运行
 
